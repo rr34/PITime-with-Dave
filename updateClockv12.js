@@ -34,7 +34,7 @@ if (currentIMC < sunriseIMC) //before sunrise
 	var seconds = parseInt((TimeLength/1000)%60), minutes = parseInt((TimeLength/(1000*60))%60), hours = parseInt((TimeLength/(1000*60*60))%24);
 	minutes = ( minutes < 10 ? "0" : "" ) + minutes;
 	seconds = ( seconds < 10 ? "0" : "" ) + seconds;
-	var displayString = "The time is now sunrise -" + hours + ":" + minutes + /* ":" + seconds + */ " . Tomorrow's length is " + dayHours + ":" + dayMinutes + ".";
+	var displayString = "The time is now sunrise -" + hours + ":" + minutes + ":" + seconds + ". Tomorrow's length is " + dayHours + ":" + dayMinutes + ".";
 
 }
 
@@ -44,7 +44,7 @@ else if ( currentIMC > sunriseIMC && currentIMC < sunsetIMC ) //after sunrise an
 	var seconds = parseInt((TimeLength/1000)%60), minutes = parseInt((TimeLength/(1000*60))%60), hours = parseInt((TimeLength/(1000*60*60))%24);
 	minutes = ( minutes < 10 ? "0" : "" ) + minutes;
 	seconds = ( seconds < 10 ? "0" : "" ) + seconds;
-	var displayString = "The time is now sunrise +" + hours + ":" + minutes + /* ":" + seconds + */ " out of a " + dayHours + ":" + dayMinutes + " day.";
+	var displayString = "The time is now sunrise +" + hours + ":" + minutes + ":" + seconds + " out of a " + dayHours + ":" + dayMinutes + " day.";
 }
 else //must be after sunset
 {
@@ -52,7 +52,7 @@ else //must be after sunset
 	var seconds = parseInt((TimeLength/1000)%60), minutes = parseInt((TimeLength/(1000*60))%60), hours = parseInt((TimeLength/(1000*60*60))%24);
 	minutes = ( minutes < 10 ? "0" : "" ) + minutes;
 	seconds = ( seconds < 10 ? "0" : "" ) + seconds;
-	var displayString = "The time is now sunrise -" + hours + ":" + minutes + /* ":" + seconds + */ ". Tomorrow's length is " + dayHours + ":" + dayMinutes + ".";
+	var displayString = "The time is now sunrise -" + hours + ":" + minutes + ":" + seconds + ". Tomorrow's length is " + dayHours + ":" + dayMinutes + ".";
 }
 
 
