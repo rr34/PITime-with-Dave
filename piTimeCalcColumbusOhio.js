@@ -1,6 +1,6 @@
 function piTimeCalcColumbusOhio (PITimeString,dayLengthString,nightLengthString,PITime,dayLength,nightLength)
 {
-debugger;
+//debugger;
 //Get current time in IMC UTC
 var currentIMC = new Date ();
 // var currentIMC = new Date(currentIMC.getUTCFullYear(), currentIMC.getUTCMonth(), currentIMC.getUTCDate(),  currentIMC.getUTCHours(), currentIMC.getUTCMinutes(), currentIMC.getUTCSeconds());
@@ -58,9 +58,12 @@ else //must be after sunset
 }
 
 
-//Display
-document.write(displayString);
-document.write(nightLengthString);
+//Display String Result
+
+debugger;
+let wholeString = displayString + nightLengthString;
+
+document.getElementById("displayResult").innerHTML = wholeString;
 
 // :TODO Prepare to be displayed in html
 
