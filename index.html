@@ -1,5 +1,5 @@
 <script src="suncalc.js"></script>
-<script src="piTimeCalcColumbusOhio.js"></script>
+<script src="piTimeCalc.js"></script>
 
 <html>
 	<head>
@@ -9,15 +9,9 @@
 	<body>
 	<div id="wholepage">
 		<div id="wholeclock">
-		<h2>Columbus, Ohio</h2>
+		<h2 id="displayLocation"></h2>
 			<div id="clock">
-			<h2 id="displayResult" /h2>
-			
-			<script>
-			piTimeCalcColumbusOhio();
-			//TODO: make the clock count.
-			</script>
-			
+			<h2 id="displayResult"></h2>
 			</div>
 
 		<div id="daylength">
@@ -26,9 +20,13 @@
 		</div>
 		</div>
 
-	<h2>Other Clocks</h2>
-	<p><a href="https://postindustrialtimeclock.com/vilavelhabrasil/">Vila Velha, Brasil</a></p>
-
+			<script>
+			let lat = prompt("Latitude","Columbus is 40.0");
+			let lng = prompt("Longitude","Columbus is -83.0");
+			piTimeCalc();
+			//TODO: make the clock count.
+			</script>
+			
 	<h2><a href="https://postindustrialtime.com/">About Post-Industrial Time</a></h2>
 
 	<h2>Coming Soon</h2>
